@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+/*RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 42px;
+  line-height: 43px;
+  letter-spacing: 0.02px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0.12em;
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.03px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.02px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+/* MAIN STYLESHEET */
+
+body {
+  background-color: #161616;
+  color: #E5E0DD;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #E5E0DD;
+  text-decoration: none;
+}
+
+main {
+  min-height: 100%;
+}
+
+main > * {
+  max-width: 576px;
+  margin: 0 auto 50px auto;
+  overflow: hidden;
+  padding: 0 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+input {
+  width: 100%;
+  background-color: #242424;
+  color: #3D3D3D;
+  border-radius: 90px;
+  padding: 30px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #3D3D3D;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+}
+
+.image-gallery .image-preview {
+  width: 278px;
+  margin-bottom: 20px;
+}
+
+.image-preview img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.payments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.payments img {
+  width: 30%;
+}
+
+.wrapper {
+  max-width: none;
+  background-color: #000;
+  margin-bottom: 0;
+}
+
+.credits {
+  max-width: 576px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.details {
+  background-color: #2B2B2D;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.image-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.image-info > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-info span {
+  background-color: rgba(255, 44, 16, 0.1);
+  color: #FF9110;
+  font-size: 14px;
+  padding: 4px 15px;
+  margin-bottom: 14px;
+  border-radius: 100px;
 }
