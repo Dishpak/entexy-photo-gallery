@@ -18,8 +18,6 @@ const ImageCard = () => {
   }, []);
 
 
-  console.log(image);
-
   return (
     <>
       <Header />

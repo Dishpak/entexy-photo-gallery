@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import GalleryContext from "../context/GalleryContext";
 
 const ToPictures = () => {
+
+  const {galleryRef} = useContext(GalleryContext);
+
+  const scrollToRef = () => {
+    return galleryRef.current.scrollIntoView();
+  }
+
   return (
     <div>
-      <button>To Pictures</button>
+      <button className={'btn'} onClick={scrollToRef}>To Pictures</button>
     </div>
   );
 };

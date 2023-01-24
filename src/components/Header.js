@@ -1,14 +1,21 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
-import GalleryContext from "../context/GalleryContext";
 
 const Header = () => {
-  const {authorized} = useContext(GalleryContext)
+
+  const logOut = () => {
+    localStorage.clear()
+    window.location.reload()
+  }
 
   return (
     <header>
       <Link to={'/'}><h2>Lorem</h2></Link>
-      {authorized ? <span>{JSON.parse(localStorage.getItem('loginDataName'))}</span> : <span>Sign in</span>}
+      <div className={'userBar'}>
+        <span>{JSON.parse(localStorage.getItem('userName'))}</span>
+        <span onClick={logOut}><img src="/images/logout_ico.png" alt="" className={'logout-ico'} />
+        <span className={'logout-text'}>Logout</span></span>
+      </div>
     </header>
   );
 };

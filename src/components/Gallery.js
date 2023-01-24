@@ -8,13 +8,13 @@ import Footer from "./Footer";
 
 const Gallery = () => {
 
-  const {images} = useContext(GalleryContext)
+  const {images, galleryRef} = useContext(GalleryContext)
 
   return (
   <>
     <Header />
     <Banner />
-    <div className={'gallery-container'}>
+    <div className={'gallery-container'} ref={galleryRef}>
       <h4>All Images</h4>
       <br/>
       <div className={'image-gallery'}>
