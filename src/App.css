@@ -132,7 +132,6 @@ main > * {
   max-width: 576px;
   margin: 25px auto 0 auto;
   overflow: hidden;
-  padding: 0 1em;
 }
 
 header {
@@ -145,6 +144,11 @@ header h2 {
 
 .userBar span {
   margin-left: 10px;
+}
+
+.login-layout {
+  padding: 0;
+  width: 80%;
 }
 
 .logout-ico {
@@ -161,6 +165,7 @@ header h2 {
 .btn {
   background-color: #FF9110;
   color: #2B2B2D;
+  margin: 20px 0;
   padding: 1em 0;
   text-transform: uppercase;
   border: 1px solid #FF9110;
