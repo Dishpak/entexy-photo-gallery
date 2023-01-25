@@ -1,7 +1,5 @@
 import {useState, useEffect} from 'react';
 import {useParams} from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
 
 const ImageCard = () => {
   const [image, setImage] = useState([]);
@@ -19,8 +17,6 @@ const ImageCard = () => {
 
 
   return (
-    <>
-      <Header />
       <div className={'image-card'}>
         <img src={image?.download_url} alt=""/>
         <div className={'details'}>
@@ -41,8 +37,6 @@ const ImageCard = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
   );
 };
 

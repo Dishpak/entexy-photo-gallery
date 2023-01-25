@@ -1,12 +1,14 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+
 
 const Header = () => {
-
+  const navigate = useNavigate();
   const logOut = () => {
     localStorage.clear()
-    window.location.reload()
+    navigate('/login')
   }
+
 
   return (
     <header>

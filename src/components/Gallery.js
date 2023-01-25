@@ -1,10 +1,8 @@
 import React from 'react';
 import {useContext} from "react";
 import Banner from "./Banner";
-import Header from "./Header"
 import {Link} from "react-router-dom";
 import GalleryContext from "../context/GalleryContext";
-import Footer from "./Footer";
 
 const Gallery = () => {
 
@@ -12,7 +10,6 @@ const Gallery = () => {
 
   return (
   <>
-    <Header />
     <Banner />
     <div className={'gallery-container'} ref={galleryRef}>
       <h4>All Images</h4>
@@ -29,7 +26,6 @@ const Gallery = () => {
         })}
       </div>
     </div>
-    <Footer />
   </>
   );
 };
