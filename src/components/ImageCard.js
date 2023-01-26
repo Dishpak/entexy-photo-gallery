@@ -13,7 +13,7 @@ const ImageCard = () => {
 
   useEffect(() => {
     loadImage()
-  }, []);
+  });
 
 
   return (
