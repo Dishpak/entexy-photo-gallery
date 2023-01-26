@@ -4,7 +4,7 @@ import ToPictures from "./ToPictures";
 const Banner = () => {
   return (
     <div className={'banner'}>
-      <img src="/images/banner-image.png" alt=""/>
+      <img src="/src/images/banner-image.png" alt=""/>
       <div className={'bannerText'}>
         <h1>Lorem ipsum dolor sit amet</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>

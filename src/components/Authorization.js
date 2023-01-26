@@ -8,7 +8,7 @@ const Authorization = () => {
   return (
     <main className={'login-layout'}>
       <div className={'login-bg'}>
-        <img src="/images/bubbles.jpeg" alt="" />
+        <img src="/src/images/bubbles.jpeg" alt="" />
       </div>
       <div className={'login-form'}>
         <form onSubmit={handleSubmit} className={'authForm'}>
