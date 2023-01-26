@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/entexy-photo-gallery/static/css/main.e566538b.css",
-    "main.js": "/entexy-photo-gallery/static/js/main.af630268.js",
+    "main.js": "/entexy-photo-gallery/static/js/main.e6b30c8f.js",
     "static/js/787.24dc777d.chunk.js": "/entexy-photo-gallery/static/js/787.24dc777d.chunk.js",
     "static/media/cat-linz.regular.ttf": "/entexy-photo-gallery/static/media/cat-linz.regular.15173512743e7bcf4866.ttf",
     "index.html": "/entexy-photo-gallery/index.html",
     "main.e566538b.css.map": "/entexy-photo-gallery/static/css/main.e566538b.css.map",
-    "main.af630268.js.map": "/entexy-photo-gallery/static/js/main.af630268.js.map",
+    "main.e6b30c8f.js.map": "/entexy-photo-gallery/static/js/main.e6b30c8f.js.map",
     "787.24dc777d.chunk.js.map": "/entexy-photo-gallery/static/js/787.24dc777d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e566538b.css",
-    "static/js/main.af630268.js"
+    "static/js/main.e6b30c8f.js"
   ]
 }
