@@ -12,8 +12,8 @@ const AppRouter = () => {
     <>
       <Routes>
         {loggedIn && <Route path={'/gallery'} element={<Gallery/>}></Route>}
-        {loggedIn && <Route path={'/entexy-photo-gallery'} element={<Navigate to={'/gallery'} />}></Route>}
-        {!loggedIn && <Route path={'/entexy-photo-gallery'} element={<Authorization/>}></Route>}
+        {loggedIn && <Route path={'/'} element={<Navigate to={'/gallery'} />}></Route>}
+        {!loggedIn && <Route path={'/'} element={<Authorization/>}></Route>}
         <Route path={'/login'} element={<Authorization />}></Route>
         {loggedIn && <Route path={'gallery/:id'} element={<ImageCard/>}></Route>}
       </Routes>
