@@ -1,11 +1,10 @@
 import React from 'react';
 import ToPictures from "./ToPictures";
-import bannerImg from '../images/banner-image.png'
 
 const Banner = () => {
   return (
     <div className={'banner'}>
-      <img src={bannerImg} alt=""/>
+      <img src='./images/banner-image.png' alt=""/>
       <div className={'bannerText'}>
         <h1>Lorem ipsum dolor sit amet</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
