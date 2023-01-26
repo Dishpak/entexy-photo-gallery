@@ -6,6 +6,7 @@ export const GalleryProvider = ({children}) => {
 
   const [images, setImages] = useState([]);
   const galleryRef = useRef(null);
+  const baseUrl = '/entexy-photo-gallery'
 
 
   const loadData = () => {
@@ -22,7 +23,7 @@ export const GalleryProvider = ({children}) => {
   }, []);
 
     return(
-      <GalleryContext.Provider value={{images, galleryRef}}>
+      <GalleryContext.Provider value={{images, galleryRef, baseUrl}}>
         {children}
       </GalleryContext.Provider>
     )
