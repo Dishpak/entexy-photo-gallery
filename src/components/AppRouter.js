@@ -1,13 +1,10 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Route, Routes, Navigate} from "react-router-dom";
 import ImageCard from "./ImageCard";
 import Gallery from "./Gallery";
 import Authorization from "./Authorization";
-import GalleryContext from "../context/GalleryContext";
 
 const AppRouter = () => {
-
-  const {baseUrl} = useContext(GalleryContext)
 
   const loggedIn = localStorage.getItem('userName');
 
