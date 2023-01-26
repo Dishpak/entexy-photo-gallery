@@ -30,9 +30,9 @@ const Footer = () => {
         </div>
       </div>
       <div className={'payments'}>
-        <img src="./public/images/visa.png" alt=""/>
-        <img src="./public/images/master-card.png" alt=""/>
-        <img src="./public/images/maestro.png" alt=""/>
+        <img src="./images/visa.png" alt=""/>
+        <img src="./images/master-card.png" alt=""/>
+        <img src="./images/maestro.png" alt=""/>
       </div>
       <div className={'credits'}>
         <p>2022-2023 All rights reserved</p>

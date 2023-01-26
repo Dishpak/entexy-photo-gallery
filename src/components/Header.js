@@ -15,7 +15,7 @@ const Header = () => {
       <Link to={'/'}><h2>Lorem</h2></Link>
       <div className={'userBar'}>
         <span>{JSON.parse(localStorage.getItem('userName'))}</span>
-        <span onClick={logOut}><img src="./public/images/logout_ico.png" alt="" className={'logout-ico'} />
+        <span onClick={logOut}><img src="./images/logout_ico.png" alt="" className={'logout-ico'} />
         <span className={'logout-text'}>Logout</span></span>
       </div>
     </header>
